@@ -1,0 +1,143 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.ms-welcome {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.ms-welcome__header {
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.ms-welcome__main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.ms-TextField {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ms-TextField-field {
+    width: 100%;
+    min-height: 60px;
+    margin-top: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ms-Dropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.ms-Button {
+    margin-top: 20px;
+    min-width: 120px;
+    padding: 8px 16px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ms-Button:hover {
+    background-color: #106ebe;
+}
+
+.ms-Button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#markdownInput {
+    width: 100%;
+    min-height: 300px;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.markdown-help {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.markdown-help ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+}
+
+.markdown-help li {
+    margin-bottom: 4px;
+}
+
+.status-container {
+    width: 100%;
+    min-height: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ms-Label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}

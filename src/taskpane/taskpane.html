@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research Paper Formatter</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-Fabric">
+    <div id="container">
+        <header class="ms-welcome__header ms-bgColor-neutralLighter">
+            <h1 class="ms-font-su">Research Paper Formatter</h1>
+        </header>
+        <main class="ms-welcome__main">
+            <div class="content">
+                <div class="padding">
+                    <div class="section">
+                        <h2>Document Format</h2>
+                        <select id="paper-format" class="ms-TextField-field">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+
+                    <div class="section">
+                        <h2>Bibliography Import</h2>
+                        <input type="file" id="bib-file" accept=".bib,.ris,.enw" class="ms-TextField-field" />
+                        <p class="help-text">Supported formats: BibTeX (.bib), RIS (.ris), EndNote (.enw)</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Citation Style</h2>
+                        <select id="citation-style" class="ms-TextField-field">
+                            <option value="apa">APA</option>
+                            <option value="mla">MLA</option>
+                            <option value="chicago">Chicago</option>
+                            <option value="harvard">Harvard</option>
+                            <option value="ieee">IEEE</option>
+                            <option value="acm">ACM</option>
+                        </select>
+                    </div>
+
+                    <div class="section">
+                        <h2>Markdown Input</h2>
+                        <textarea id="markdown-input" class="ms-TextField-field" rows="15" placeholder="# Title
+
+## Introduction
+Your introduction here...
+
+## Methods
+Your methods here...
+
+## Results
+Your results here...
+
+## Discussion
+Your discussion here...
+
+## References
+[1] Your citation here..."></textarea>
+                    </div>
+
+                    <div class="section">
+                        <button id="format-button" class="ms-Button ms-Button--primary">
+                            <span class="ms-Button-label">Format Document</span>
+                        </button>
+                    </div>
+
+                    <div id="status" class="status-container"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>
