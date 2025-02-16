@@ -82,7 +82,7 @@ word-md-research-formatter/
 ```
 
 ## Acknowledgements
-Dave Shapio
+Dave Shapiro
 https://github.com/daveshap/SparsePrimingRepresentations
 
 ## License
