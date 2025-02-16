@@ -81,6 +81,10 @@ word-md-research-formatter/
 └── README.md
 ```
 
+## Acknowledgements
+Dave Shapio
+https://github.com/daveshap/SparsePrimingRepresentations
+
 ## License
 
 Copyright 2025 Auvant Advisory Services
