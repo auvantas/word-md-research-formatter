@@ -39,6 +39,26 @@ This Microsoft Word add-in allows you to paste Markdown text and automatically f
 5. Select your desired citation style
 6. Click "Format Paper"
 
+### Markdown Support
+
+The add-in supports standard Markdown syntax including:
+- Headers (# to ######)
+- Bold and italic text (**bold**, *italic*)
+- Lists (ordered and unordered)
+- Code blocks (inline and fenced)
+- Block quotes
+- Tables
+- Links and images
+
+### Citation Format
+
+Citations can be included in your Markdown using the following formats:
+- Inline citation: [@AuthorYear]
+- Multiple citations: [@Author1Year; @Author2Year]
+- Citation with page number: [@AuthorYear, p. 123]
+
+The add-in will automatically detect these citations and format them according to your chosen style.
+
 ## Development
 
 This project uses:
@@ -63,4 +83,26 @@ word-md-research-formatter/
 
 ## License
 
-MIT
+Copyright 2025 Auvant Advisory Services
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+### Third-Party Libraries
+
+This project uses several open-source libraries:
+- Office.js
+- Marked.js
+- Citation.js
+- Office UI Fabric React
+
+All third-party libraries are used in accordance with their respective licenses.
